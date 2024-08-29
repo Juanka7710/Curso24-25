@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Color de texto */
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+/* Estilo del Header */
+.header {
+    background-color: #007bff; /* Color del header */
+    color: white; /* Color del texto en el header */
+    display: flex; /* Uso de flexbox */
+    align-items: center; /* Centrado vertical */
+    justify-content: space-between; /* Espacio entre logo y título */
+    padding: 15px 20px; /* Espaciado interno */
+}
+
+.logo {
+    width: 150px; /* Ancho del logo */
+    height: auto; /* Mantener proporción */
+}
+
+.title {
+    font-size: 20px; /* Tamaño de fuente */
+    margin: 0; /* Eliminar margen */
+}
+
+/* Estilo del Main */
+.main {
+    padding: 20px; /* Espaciado interno */
+}
+
+.section {
+    margin: 20px 0; /* Margen alrededor de la sección */
+    padding-bottom: 30px;
+}
+
+.title__2 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px; /* Tamaño del subtítulo */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilo de la Lista */
+.list {
+    list-style: none; /* Eliminar viñetas */
+    padding: auto; /* Eliminar padding */
+}
+
+.list__2 {
+    margin: 5px 0; /* Margen entre los elementos de la lista */
+}
+
+.links {
+    text-decoration: none; /* Sin subrayado */
+    color: #007bff; /* Color del enlace */
+    transition: color 0.3s; /* Transición suave */
+}
+
+.links:hover {
+    color: #0056b3; /* Color al pasar el mouse */
+}
+
+/* Estilo del Footer */
+footer {
+    background-color: #007bff; /* Color del footer */
+    color: white; /* Color del texto en el footer */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Uso de flexbox */
+    justify-content: space-between; /* Espacio entre columnas */
+    flex-wrap: wrap; /* Permitir que se ajusten en pantallas pequeñas */
+}
+
+footer div {
+    flex: 1; /* Flex para que las columnas se ajusten */
+    margin: 10px; /* Margen entre columnas */
+}
+
+h4 {
+    margin-bottom: 10px; /* Espaciado debajo de títulos */
+}
+
+/* Estilo de los enlaces en el footer */
+footer a {
+    color: white; /* Color de los enlaces en el footer */
+    text-decoration: none; /* Sin subrayado */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 600px) {
+    .header, footer {
+        flex-direction: column; /* Colocar en columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinear a la izquierda */
+    }
+
+    .header {
+        text-align: center; /* Centrar texto en el header */
+    }
+}
