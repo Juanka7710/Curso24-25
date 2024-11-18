@@ -1,0 +1,58 @@
+.body {
+    background-color: rgb(215, 215, 215);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(175, 175, 175);
+    box-sizing: content-box;
+}
+
+.titulo_header {
+    margin: 0;
+    padding: 30px;
+    color: rgb(1, 150, 68);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contenedor {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.caja {
+    width: 50%;
+    height: 100px;
+}
+
+.color1 {
+    background-color: red;
+}
+
+.color2 {
+    background-color: aqua;
+}
+
+hr {
+    margin-top: 25px;
+    color: rgb(51, 255, 0);
+}
+
+.contenedor2 {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor3 {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row-reverse;
+}
