@@ -44,7 +44,7 @@ main {
 /* Estilo para el título de las secciones */
 .title__2 {
     font-size: 2em; /* Tamaño grande para el título */
-    color: #2c3e50; /* Color de texto oscuro */
+    color: #202020; /* Color de texto oscuro */
     border-bottom: 2px solid #202020; /* Línea debajo del título */
     padding-bottom: 10px;
     margin-bottom: 20px;
