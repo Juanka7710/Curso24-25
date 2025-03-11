@@ -45,7 +45,7 @@ main {
 .title__2 {
     font-size: 2em; /* Tamaño grande para el título */
     color: #2c3e50; /* Color de texto oscuro */
-    border-bottom: 2px solid #3498db; /* Línea debajo del título */
+    border-bottom: 2px solid #202020; /* Línea debajo del título */
     padding-bottom: 10px;
     margin-bottom: 20px;
     display: inline-block; /* Ajusta el ancho del título al contenido */
@@ -72,13 +72,13 @@ main {
 
 .box a {
     text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #3498db; /* Color del texto del enlace */
+    color: #202020; /* Color del texto del enlace */
     font-size: 1em; /* Tamaño del texto del enlace */
     font-weight: bold; /* Negrita en el texto del enlace */
 }
 
 .box a:hover {
-    color: #2980b9; /* Color más oscuro al pasar el ratón */
+    color: #202020; /* Color más oscuro al pasar el ratón */
 }
 
 .box:hover {
