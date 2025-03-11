@@ -49,7 +49,7 @@ main {
 .title__2 {
     font-size: 2em;
     margin-bottom: 15px;
-    color: #007BFF; /* Color del título */
+    color: #202020; /* Color del título */
 }
 
 /* Estilo de la lista */
@@ -63,12 +63,12 @@ main {
 
 .links {
     text-decoration: none; /* Sin subrayado */
-    color: #007BFF; /* Color de los enlaces */
+    color: #202020; /* Color de los enlaces */
     transition: color 0.3s; /* Transición suave */
 }
 
 .links:hover {
-    color: #0056b3; /* Color al pasar el ratón */
+    color: #202020; /* Color al pasar el ratón */
 }
 
 /* Estilo del footer */
