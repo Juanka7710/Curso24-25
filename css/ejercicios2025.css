@@ -1,0 +1,118 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo del header */
+.header {
+    background: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .logo {
+    max-width: 130px; /* Tamaño máximo del logo */
+}
+
+/* Estilo del título principal */
+.title {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+/* Estilo general para el main */
+main {
+    padding: 20px;
+    background-color: #f4f4f4; /* Fondo claro para el main */
+}
+
+/* Estilo para las secciones */
+.section {
+    margin-bottom: 30px; /* Espacio entre secciones */
+}
+
+/* Estilo para el título de las secciones */
+.title__2 {
+    font-size: 2em; /* Tamaño grande para el título */
+    color: #202020; /* Color de texto oscuro */
+    border-bottom: 2px solid #202020; /* Línea debajo del título */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: inline-block; /* Ajusta el ancho del título al contenido */
+}
+
+/* Estilo para el contenedor de los ejercicios */
+.parent {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+    gap: 20px; /* Espacio entre las cajas */
+    justify-content: center; /* Centra las cajas horizontalmente */
+}
+
+/* Estilo para cada caja */
+.box {
+    background-color: #ffffff; /* Fondo blanco para las cajas */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px;
+    width: 150px; /* Ancho fijo para las cajas */
+    text-align: center; /* Centra el texto dentro de la caja */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.box a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #202020; /* Color del texto del enlace */
+    font-size: 1em; /* Tamaño del texto del enlace */
+    font-weight: bold; /* Negrita en el texto del enlace */
+}
+
+.box a:hover {
+    color: #202020; /* Color más oscuro al pasar el ratón */
+}
+
+.box:hover {
+    background-color: #ecf0f1; /* Fondo gris claro al pasar el ratón */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la caja */
+}
+
+
+/* Estilo del footer */
+footer {
+    background: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none; /* Sin viñetas */
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+/* Estilo de los enlaces en el footer */
+footer a {
+    color: #fff; /* Color blanco */
+    text-decoration: none; /* Sin subrayado */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
