@@ -67,9 +67,18 @@ li {
     font-weight: bold;
 }
 
+.img {
+    display: grid;
+    place-items: center;
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
 img {
-    width: 400px;
-    height: 400px;
+    max-width: 100%;
+    height: auto;
 }
 
 .video {
