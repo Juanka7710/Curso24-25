@@ -1,43 +1,424 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clases Css</title>
+    <title>Estilos CSS</title>
     <link rel="stylesheet" href="./css/clases.css">
 </head>
+
 <body class="body">
     <header class="header">
-        <div class="div_header">
-            <h1 class="titulo_header">Aqui estan todas las clases de flex-box, vista con sus respectivas cajas.</h1>
-        </div>
+        <h1 class="titulo_header">Cheat Sheet de CSS</h1>
+        <p class="subtitulo_header">Guía rápida de propiedades esenciales de CSS</p>
     </header>
 
     <main>
-        <h2>flex-direction column</h2>
-        <div class="contenedor">
-            <div class="caja color1"></div>
-            <div class="caja color2"></div>
-        </div>
+        <section class="categoria-seccion">
+            <h2 class="categoria-titulo">Flexbox</h2>
+            <p class="categoria-descripcion">Flexbox (Flexible Box Module) es un modelo de diseño unidimensional que
+                permite distribuir y alinear elementos en un contenedor de forma eficiente.</p>
 
-        <hr>
+            <h3>display: flex / inline-flex</h3>
+            <p class="descripcion">Define un contenedor flex. `flex` lo hace un bloque, `inline-flex` lo hace un
+                elemento en línea.</p>
+            <div class="contenedor display-flex">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+            </div>
 
-        <h2>flex-direction row</h2>
-        <div class="contenedor2">
-            <div class="caja color1"></div>
-            <div class="caja color2"></div>
-        </div>
+            <h3>flex-direction: row / column / row-reverse / column-reverse</h3>
+            <p class="descripcion">Establece la dirección del eje principal, que define cómo se colocan los ítems flex.
+            </p>
+            <h4>flex-direction: row (por defecto)</h4>
+            <div class="contenedor fd-row">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+            </div>
+            <h4>flex-direction: column</h4>
+            <div class="contenedor fd-column">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+            </div>
+            <h4>flex-direction: row-reverse</h4>
+            <div class="contenedor fd-row-reverse">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+            </div>
+            <h4>flex-direction: column-reverse</h4>
+            <div class="contenedor fd-column-reverse">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+            </div>
 
-        <hr>
+            <h3>flex-wrap: nowrap / wrap / wrap-reverse</h3>
+            <p class="descripcion">Controla si los ítems flex deben ajustarse a la siguiente línea o permanecer en una
+                sola línea.</p>
+            <h4>flex-wrap: nowrap (por defecto)</h4>
+            <div class="contenedor flex-nowrap">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+                <div class="caja color1">4</div>
+                <div class="caja color2">5</div>
+                <div class="caja color3">6</div>
+                <div class="caja color1">7</div>
+            </div>
+            <h4>flex-wrap: wrap</h4>
+            <div class="contenedor flex-wrap">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+                <div class="caja color1">4</div>
+                <div class="caja color2">5</div>
+                <div class="caja color3">6</div>
+                <div class="caja color1">7</div>
+            </div>
+            <h4>flex-wrap: wrap-reverse</h4>
+            <div class="contenedor flex-wrap-reverse">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+                <div class="caja color1">4</div>
+                <div class="caja color2">5</div>
+                <div class="caja color3">6</div>
+                <div class="caja color1">7</div>
+            </div>
 
-        <h2>flex-direction row-reverse</h2>
-        <div class="contenedor3">
-            <div class="caja color1"></div>
-            <div class="caja color2"></div>
-        </div>
+            <h3>justify-content: (flex-start, flex-end, center, space-between, space-around, space-evenly)</h3>
+            <p class="descripcion">Alinea los ítems flex a lo largo del eje principal del contenedor.</p>
+            <h4>justify-content: flex-start</h4>
+            <div class="contenedor jc-start">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+            </div>
+            <h4>justify-content: space-between</h4>
+            <div class="contenedor jc-between">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+            </div>
+            <h4>justify-content: center</h4>
+            <div class="contenedor jc-center">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+            </div>
 
-        <hr>
+            <h3>align-items: (flex-start, flex-end, center, stretch, baseline)</h3>
+            <p class="descripcion">Alinea los ítems flex a lo largo del eje transversal del contenedor.</p>
+            <h4>align-items: center</h4>
+            <div class="contenedor ai-center">
+                <div class="caja color1">A</div>
+                <div class="caja color2">B</div>
+                <div class="caja color3">C</div>
+            </div>
+            <h4>align-items: stretch (por defecto)</h4>
+            <div class="contenedor ai-stretch">
+                <div class="caja color1">A</div>
+                <div class="caja color2">B</div>
+                <div class="caja color3">C</div>
+            </div>
+            <h4>align-items: baseline</h4>
+            <div class="contenedor ai-baseline">
+                <div class="caja color1" style="font-size: 1.5em;">A</div>
+                <div class="caja color2">B</div>
+                <div class="caja color3" style="font-size: 0.8em;">C</div>
+            </div>
+
+            <h3>align-content: (flex-start, flex-end, center, space-between, space-around, stretch)</h3>
+            <p class="descripcion">Alinea líneas de ítems flex cuando hay múltiples líneas.</p>
+            <h4>align-content: space-around</h4>
+            <div class="contenedor ac-space-around">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+                <div class="caja color1">4</div>
+                <div class="caja color2">5</div>
+                <div class="caja color3">6</div>
+                <div class="caja color1">7</div>
+                <div class="caja color2">8</div>
+                <div class="caja color3">9</div>
+            </div>
+
+            <h3 class="tituloh3">Propiedades de Hijos de Flexbox</h3>
+
+            <h3>order: &lt;integer&gt;</h3>
+            <p class="descripcion">Cambia el orden visual de un ítem flex.</p>
+            <div class="contenedor ejemplo">
+                <div class="caja color1" style="order: 3;">3</div>
+                <div class="caja color2" style="order: 1;">1</div>
+                <div class="caja color3" style="order: 2;">2</div>
+            </div>
+
+            <h3>flex-grow: &lt;number&gt;</h3>
+            <p class="descripcion">Define la capacidad de un ítem flex para crecer.</p>
+            <div class="contenedor flex-grow-ejemplo">
+                <div class="caja color1" style="flex-grow: 1;">Grow 1</div>
+                <div class="caja color2" style="flex-grow: 2;">Grow 2</div>
+                <div class="caja color3">No Grow</div>
+            </div>
+
+            <h3>flex-shrink: &lt;number&gt;</h3>
+            <p class="descripcion">Define la capacidad de un ítem flex para encogerse.</p>
+            <div class="contenedor flex-shrink-ejemplo">
+                <div class="caja color1" style="width: 150px; flex-shrink: 3;">Shrink 3</div>
+                <div class="caja color2" style="width: 150px; flex-shrink: 1;">Shrink 1</div>
+                <div class="caja color3" style="width: 150px;">No Shrink</div>
+            </div>
+
+            <h3>flex-basis: &lt;length&gt; | auto | content</h3>
+            <p class="descripcion">Establece el tamaño inicial de un ítem flex antes de que el espacio restante sea
+                distribuido.</p>
+            <div class="contenedor flex-basis-ejemplo">
+                <div class="caja color1" style="flex-basis: 100px;">Basis 100px</div>
+                <div class="caja color2" style="flex-basis: 200px;">Basis 200px</div>
+            </div>
+
+            <h3>align-self: (auto, flex-start, flex-end, center, baseline, stretch)</h3>
+            <p class="descripcion">Sobrescribe el valor de `align-items` para un ítem flex individual.</p>
+            <div class="contenedor align-self-ejemplo">
+                <div class="caja color1" style="align-self: flex-start;">Start</div>
+                <div class="caja color2" style="align-self: center;">Center</div>
+                <div class="caja color3" style="align-self: flex-end;">End</div>
+                <div class="caja color1" style="align-self: stretch;">Stretch</div>
+            </div>
+
+        </section>
+
+        <section class="categoria-seccion">
+            <h2 class="categoria-titulo">Grid</h2>
+            <p class="categoria-descripcion">CSS Grid Layout es un sistema de diseño bidimensional que permite organizar
+                elementos en filas y columnas.</p>
+
+            <h3>display: grid / inline-grid</h3>
+            <p class="descripcion">Define un contenedor grid. `grid` lo hace un bloque, `inline-grid` lo hace un
+                elemento en línea.</p>
+            <div class="contenedor display-grid">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+            </div>
+
+            <h3>grid-template-columns / grid-template-rows</h3>
+            <p class="descripcion">Define las columnas y filas de la cuadrícula, especificando sus tamaños.</p>
+            <h4>grid-template-columns: auto auto auto</h4>
+            <div class="contenedor grid-auto">
+                <div class="caja color1">Auto</div>
+                <div class="caja color2">Auto</div>
+                <div class="caja color3">Auto</div>
+            </div>
+            <h4>grid-template-columns: 1fr 2fr</h4>
+            <div class="contenedor grid-fr">
+                <div class="caja color1">1fr</div>
+                <div class="caja color2">2fr</div>
+            </div>
+            <h4>grid-template-columns con minmax()</h4>
+            <div class="contenedor grid-minmax">
+                <div class="caja color1">minmax</div>
+                <div class="caja color2">minmax</div>
+                <div class="caja color3">minmax</div>
+                <div class="caja color1">minmax</div>
+            </div>
+            <h4>grid-template-rows: 80px 80px</h4>
+            <div class="contenedor grid-filas">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+                <div class="caja color1">4</div>
+                <div class="caja color2">5</div>
+                <div class="caja color3">6</div>
+            </div>
+
+            <h3>gap / row-gap / column-gap</h3>
+            <p class="descripcion">Establece el tamaño de las canaletas (espacios) entre filas y columnas.</p>
+            <div class="contenedor grid-gap">
+                <div class="caja color1">1</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3">3</div>
+                <div class="caja color1">4</div>
+                <div class="caja color2">5</div>
+                <div class="caja color3">6</div>
+            </div>
+
+            <h3 class="tituloh3">Propiedades de Hijos de Grid</h3>
+
+            <h3>grid-column / grid-row</h3>
+            <p class="descripcion">Define dónde se coloca un ítem grid dentro de las líneas de columna/fila.</p>
+            <div class="contenedor grid-item-placement">
+                <div class="caja color1" style="grid-column: 1 / span 2;">Span 2 Col</div>
+                <div class="caja color2">2</div>
+                <div class="caja color3" style="grid-row: 2 / span 2;">Span 2 Row</div>
+                <div class="caja color1">4</div>
+                <div class="caja color2">5</div>
+            </div>
+
+            <h3>justify-self / align-self</h3>
+            <p class="descripcion">Alinea un ítem grid dentro de su celda a lo largo del eje de la fila (justify-self) o
+                columna (align-self).</p>
+            <div class="contenedor grid-self-alignment">
+                <div class="caja color1" style="justify-self: end;">End</div>
+                <div class="caja color2" style="align-self: center;">Center</div>
+                <div class="caja color3" style="justify-self: start; align-self: end;">Start/End</div>
+            </div>
+        </section>
+
+        <section class="categoria-seccion">
+            <h2 class="categoria-titulo">Layout</h2>
+            <p class="categoria-descripcion">Propiedades generales de CSS para controlar la disposición de los elementos
+                en una página.</p>
+
+            <h3>display: block / inline / inline-block / none</h3>
+            <p class="descripcion">Define cómo se muestra un elemento en el documento.</p>
+            <h4>display: block</h4>
+            <div class="contenedor block-ejemplo">
+                <span class="caja color1 block-item">Bloque 1</span>
+                <span class="caja color2 block-item">Bloque 2</span>
+            </div>
+            <h4>display: inline</h4>
+            <div class="contenedor inline-ejemplo">
+                <span class="caja color1 inline-item">Inline 1</span>
+                <span class="caja color2 inline-item">Inline 2</span>
+            </div>
+            <h4>display: inline-block</h4>
+            <div class="contenedor inline-block-ejemplo">
+                <span class="caja color1 inline-block-item">Inline-Block 1</span>
+                <span class="caja color2 inline-block-item">Inline-Block 2</span>
+            </div>
+
+            <h3>visibility: visible / hidden / collapse</h3>
+            <p class="descripcion">Controla si un elemento es visible o no, manteniendo su espacio en el layout.</p>
+            <div class="contenedor visibility-ejemplo">
+                <div class="caja color1">Visible</div>
+                <div class="caja color2 hidden-item">Hidden</div>
+                <div class="caja color3">Visible</div>
+            </div>
+        </section>
+
+        <section class="categoria-seccion">
+            <h2 class="categoria-titulo">Position</h2>
+            <p class="categoria-descripcion">Controla la posición de un elemento en relación con su posición normal, su
+                contenedor o la ventana gráfica.</p>
+
+            <h3>position: static / relative / absolute / fixed / sticky</h3>
+            <p class="descripcion">Establece el tipo de posicionamiento para un elemento.</p>
+            <h4>position: static (por defecto)</h4>
+            <div class="contenedor static-ejemplo">
+                <div class="caja color1 static-item">Static</div>
+                <div class="caja color2">Normal Flow</div>
+            </div>
+            <h4>position: relative</h4>
+            <div class="contenedor relative-ejemplo">
+                <div class="caja color1 relative-item">Relative</div>
+                <div class="caja color2">Normal Flow</div>
+            </div>
+            <h4>position: absolute</h4>
+            <p class="descripcion-small">El contenedor debe tener `position: relative` para que los ítems absolutos se
+                posicionen en relación a él.</p>
+            <div class="contenedor absolute-parent">
+                <div class="caja color1 absolute-item">Absolute</div>
+                <div class="caja color2">Normal Flow</div>
+            </div>
+            <h4>position: fixed</h4>
+            <p class="descripcion-small">Se posiciona en relación con la ventana gráfica y permanece fijo al
+                desplazarse.</p>
+            <div class="fixed-item caja color3">Fixed</div>
+            <div style="height: 500px;"></div>
+            <h4>position: sticky</h4>
+            <p class="descripcion-small">Se posiciona normalmente hasta que un umbral de desplazamiento se alcanza,
+                luego se vuelve fijo.</p>
+            <div class="contenedor sticky-ejemplo">
+                <div class="caja color1">Item 1</div>
+                <div class="caja color2 sticky-item">Sticky</div>
+                <div class="caja color3">Item 3</div>
+                <div class="caja color1">Item 4</div>
+                <div class="caja color2">Item 5</div>
+                <div class="caja color3">Item 6</div>
+            </div>
+            <div style="height: 500px;"></div>
+        </section>
+
+        <section class="categoria-seccion">
+            <h2 class="categoria-titulo">Float</h2>
+            <p class="categoria-descripcion">La propiedad `float` se usa para envolver texto alrededor de imágenes o
+                elementos, sacándolos del flujo normal del documento.</p>
+
+            <h3>float: left / right / none</h3>
+            <p class="descripcion">Coloca un elemento a la izquierda o derecha de su contenedor, permitiendo que otros
+                elementos fluyan a su alrededor.</p>
+            <div class="contenedor float-ejemplo">
+                <img src="https://cdn.pixabay.com/photo/2024/01/30/16/46/horse-8542469_960_720.jpg"
+                    style="width: 300px;" alt="Placeholder" class="float-image">
+                <p>Este es un párrafo de ejemplo para demostrar el uso de la propiedad <code>float</code>. La imagen de
+                    la izquierda está flotando, permitiendo que este texto fluya a su alrededor. Esto es útil para
+                    diseños de estilo de revista o periódico. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h3>clear: left / right / both / none</h3>
+            <p class="descripcion">Evita que un elemento se coloque al lado de elementos flotantes.</p>
+            <div class="contenedor clear-ejemplo">
+                <img src="https://cdn.pixabay.com/photo/2024/01/30/16/46/horse-8542469_960_720.jpg"
+                    style="width: 300px;" alt="Placeholder" class="float-image">
+                <p>Este texto está al lado de la imagen flotante.</p>
+                <div class="clear-div"></div>
+                <p>Este párrafo está debajo de la imagen flotante gracias a la propiedad `clear: both;`.</p>
+            </div>
+        </section>
+
+        <section class="categoria-seccion">
+            <h2 class="categoria-titulo">Modelo de Cajas (Box Model)</h2>
+            <p class="categoria-descripcion">El Modelo de Cajas de CSS describe cómo se visualizan los elementos HTML en
+                el navegador, incluyendo contenido, padding, borde y margen.</p>
+
+            <h3>content</h3>
+            <p class="descripcion">El área donde se muestra el contenido real del elemento (texto, imágenes, etc.).</p>
+            <div class="box-model-caja">
+                <div class="box-model-content">Contenido</div>
+            </div>
+
+            <h3>padding</h3>
+            <p class="descripcion">El espacio entre el contenido y el borde del elemento.</p>
+            <div class="box-model-caja">
+                <div class="box-model-padding">Padding</div>
+            </div>
+
+            <h3>border</h3>
+            <p class="descripcion">La línea que rodea el padding y el contenido.</p>
+            <div class="box-model-caja">
+                <div class="box-model-border">Borde</div>
+            </div>
+
+            <h3>margin</h3>
+            <p class="descripcion">El espacio alrededor del borde del elemento, separándolo de otros elementos.</p>
+            <div class="box-model-caja">
+                <div class="box-model-margin">Margen</div>
+            </div>
+
+            <h3>box-sizing: content-box / border-box</h3>
+            <p class="descripcion">Define cómo se calcula el ancho y alto total de un elemento.</p>
+            <h4>box-sizing: content-box (por defecto)</h4>
+            <div class="contenedor box-sizing-ejemplo">
+                <div class="caja color1 content-box-item">Content Box</div>
+                <div class="caja color2 content-box-item">Content Box</div>
+            </div>
+            <h4>box-sizing: border-box</h4>
+            <div class="contenedor box-sizing-ejemplo">
+                <div class="caja color1 border-box-item">Border Box</div>
+                <div class="caja color2 border-box-item">Border Box</div>
+            </div>
+        </section>
     </main>
-    
 </body>
+
 </html>
